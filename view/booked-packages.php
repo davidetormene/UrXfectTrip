@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -23,7 +27,7 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
         <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2"><a class="navbar-brand" href="index.html">UrXfectTrip</a>
+            <div class="collapse navbar-collapse" id="navcol-2"><a class="navbar-brand" href="homepage.php">UrXfectTrip</a>
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation">
                         <div class="container-fluid">
@@ -31,18 +35,18 @@
                                 <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                                     <div class="collapse navbar-collapse" id="navcol-1">
                                         <ul class="nav navbar-nav">
-                                            <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html" style="color: rgba(0,0,0,0.9);">Home</a></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" style="color: rgba(0,0,0,0.7);" href="our-packages.html">our packages</a></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" href="packages-available.html" style="color: rgba(0,0,0,0.7);">packages available</a></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" href="booked-packages.html" style="color: rgba(0,0,0,0.7);">booked trips</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link active" href="homepage.php" style="color: rgba(0,0,0,0.9);">Home</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" style="color: rgba(0,0,0,0.7);" href="our-packages.php">our packages</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" href="packages-available.php" style="color: rgba(0,0,0,0.7);">packages available</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" href="booked-packages.php" style="color: rgba(0,0,0,0.7);">booked trips</a></li>
                                             <li class="nav-item" role="presentation"></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" style="color: rgba(0,0,0,0.9);">Login</a></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" href="registration.html" style="background-color: #1793e0;color: rgba(0,0,0,0.9);">register</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.php" style="color: rgba(0,0,0,0.9);">Login</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" href="registration.php" style="background-color: #1793e0;color: rgba(0,0,0,0.9);">register</a></li>
                                             <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">Profile&nbsp;</a>
-                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="manage-profile.html">Edit Profile</a><a class="dropdown-item" role="presentation" href="#">Log out</a></div>
+                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="manage-profile.php">Edit Profile</a><a class="dropdown-item" role="presentation" href="#">Log out</a></div>
                                             </li>
                                             <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: rgba(0,0,0,0.7);">Administration&nbsp;</a>
-                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="customers.html">Customers</a><a class="dropdown-item" role="presentation" href="packages-available.html">Packages</a><a class="dropdown-item" role="presentation">Edit Profile</a>
+                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="customers.php">Customers</a><a class="dropdown-item" role="presentation" href="packages-available.php">Packages</a><a class="dropdown-item" role="presentation">Edit Profile</a>
                                                     <a
                                                         class="dropdown-item" role="presentation" href="#">Log out</a>
                                                 </div>
@@ -123,68 +127,82 @@
             </div>
         </div>
     </nav>
-    <main class="page pricing-table-page"></main>
-    <section class="clean-block clean-pricing dark">
-        <div class="container">
-            <div class="block-heading">
-                <h2 class="text-info">Costs for the Day</h2>
-                <div class="table-responsive" style="margin: 0px;padding: 20px;height: 184px;">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Cost 1</th>
-                                <th>Cost 2</th>
-                                <th>Cost 3</th>
-                                <th>Cost 4</th>
-                                <th>Cost 5</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Breakfast</td>
-                                <td>Louvre</td>
-                                <td>Lunch</td>
-                                <td>Notre Dame</td>
-                                <td>Dinner</td>
-                            </tr>
-                            <tr>
-                                <td>Cell 3</td>
-                                <td>Breakfast</td>
-                                <td>Museum n2</td>
-                                <td>Lunch</td>
-                                <td>Afternoon attraction</td>
-                                <td>Dinner</td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <main class="page pricing-table-page">
+        <section class="clean-block clean-pricing dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Booked Packages</h2>
+                    <div class="table-responsive" style="margin: 0px;padding: 20px;height: 184px;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Departure</th>
+                                    <th>Arrival</th>
+                                    <th>Region</th>
+                                    <th>Participants</th>
+                                    <th>Initial Cost</th>
+                                    <th>Itinerary</th>
+                                    <th>Costs Overview</th>
+                                    <th>Admin</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cell 1</td>
+                                    <td>xx/yy/zz</td>
+                                    <td>xx/yy/zz</td>
+                                    <td>Switzerland</td>
+                                    <td>10/20</td>
+                                    <td>200 chf</td>
+                                    <td><button class="btn btn-primary" type="button"><i class="fa fa-road"></i></button></td>
+                                    <td><button class="btn btn-primary" type="button"><i class="fa fa-dollar"></i></button></td>
+                                    <td>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button"><i class="fa fa-edit"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-trash"></i></button></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cell 3</td>
+                                    <td>xx/yy/zz</td>
+                                    <td>xx/yy/zz</td>
+                                    <td>France</td>
+                                    <td>3/20</td>
+                                    <td>300 chf</td>
+                                    <td><button class="btn btn-primary" type="button"><i class="fa fa-road"></i></button></td>
+                                    <td><button class="btn btn-primary" type="button"><i class="fa fa-dollar"></i></button></td>
+                                    <td>
+                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button"><i class="fa fa-edit"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-trash"></i></button></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn-group float-left" role="group"><button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button></div>
                 </div>
-                <div class="btn-group float-left" role="group"><button class="btn btn-primary" type="button">Print Financial Overview</button></div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer class="page-footer dark">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-3">
                     <h5>Get started</h5>
                     <ul>
-                        <li><a href="login.html">Log in</a></li>
-                        <li><a href="registration.html">Register</a></li>
+                        <li><a href="login.php">Log in</a></li>
+                        <li><a href="registration.php">Register</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>UrXfectTrip</h5>
                     <ul>
                         <li><a href="#">About us</a></li>
-                        <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a href="contact-us.php">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Company Section</h5>
                     <ul>
-                        <li><a href="login.html">Admin Login</a></li>
+                        <li><a href="login.php">Admin Login</a></li>
                     </ul>
                 </div>
             </div>

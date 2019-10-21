@@ -1,10 +1,14 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Register - Brand</title>
+    <title>Login - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -23,7 +27,7 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
         <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2"><a class="navbar-brand" href="index.html">UrXfectTrip</a>
+            <div class="collapse navbar-collapse" id="navcol-2"><a class="navbar-brand" href="homepage.php">UrXfectTrip</a>
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation">
                         <div class="container-fluid">
@@ -31,18 +35,18 @@
                                 <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                                     <div class="collapse navbar-collapse" id="navcol-1">
                                         <ul class="nav navbar-nav">
-                                            <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html" style="color: rgba(0,0,0,0.9);">Home</a></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" style="color: rgba(0,0,0,0.7);" href="our-packages.html">our packages</a></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" href="packages-available.html" style="color: rgba(0,0,0,0.7);">packages available</a></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" href="booked-packages.html" style="color: rgba(0,0,0,0.7);">booked trips</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link active" href="homepage.php" style="color: rgba(0,0,0,0.9);">Home</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" style="color: rgba(0,0,0,0.7);" href="our-packages.php">our packages</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" href="packages-available.php" style="color: rgba(0,0,0,0.7);">packages available</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" href="booked-packages.php" style="color: rgba(0,0,0,0.7);">booked trips</a></li>
                                             <li class="nav-item" role="presentation"></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" style="color: rgba(0,0,0,0.9);">Login</a></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link" href="registration.html" style="background-color: #1793e0;color: rgba(0,0,0,0.9);">register</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" href="login.php" style="color: rgba(0,0,0,0.9);">Login</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link" href="registration.php" style="background-color: #1793e0;color: rgba(0,0,0,0.9);">register</a></li>
                                             <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">Profile&nbsp;</a>
-                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="manage-profile.html">Edit Profile</a><a class="dropdown-item" role="presentation" href="#">Log out</a></div>
+                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="manage-profile.php">Edit Profile</a><a class="dropdown-item" role="presentation" href="#">Log out</a></div>
                                             </li>
                                             <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: rgba(0,0,0,0.7);">Administration&nbsp;</a>
-                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="customers.html">Customers</a><a class="dropdown-item" role="presentation" href="packages-available.html">Packages</a><a class="dropdown-item" role="presentation">Edit Profile</a>
+                                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="customers.php">Customers</a><a class="dropdown-item" role="presentation" href="packages-available.php">Packages</a><a class="dropdown-item" role="presentation">Edit Profile</a>
                                                     <a
                                                         class="dropdown-item" role="presentation" href="#">Log out</a>
                                                 </div>
@@ -123,17 +127,18 @@
             </div>
         </div>
     </nav>
-    <main class="page registration-page">
+    <main class="page login-page">
         <section class="clean-block clean-form dark">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Registration</h2>
+                    <h2 class="text-info">Log In</h2>
                 </div>
                 <form>
-                    <div class="form-group"><label for="name">Name</label><input class="form-control item" type="text" id="name"></div>
-                    <div class="form-group"><label for="name">Surname</label><input class="form-control item" type="text" id="surname"></div>
-                    <div class="form-group"><label for="password">Password</label><input class="form-control item" type="password" id="password"></div>
-                    <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div><button class="btn btn-primary btn-block" type="submit">Sign Up</button></form>
+                    <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div>
+                    <div class="form-group"><label for="password">Password</label><input class="form-control" type="password" id="password"></div>
+                    <div class="form-group">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="checkbox"><label class="form-check-label" for="checkbox">Remember me</label></div>
+                    </div><a href="#">Forgot the password?</a><button class="btn btn-primary btn-block" type="submit">Log In</button></form>
             </div>
         </section>
     </main>
@@ -143,21 +148,21 @@
                 <div class="col-sm-3">
                     <h5>Get started</h5>
                     <ul>
-                        <li><a href="login.html">Log in</a></li>
-                        <li><a href="registration.html">Register</a></li>
+                        <li><a href="login.php">Log in</a></li>
+                        <li><a href="registration.php">Register</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>UrXfectTrip</h5>
                     <ul>
                         <li><a href="#">About us</a></li>
-                        <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a href="contact-us.php">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Company Section</h5>
                     <ul>
-                        <li><a href="login.html">Admin Login</a></li>
+                        <li><a href="login.php">Admin Login</a></li>
                     </ul>
                 </div>
             </div>
